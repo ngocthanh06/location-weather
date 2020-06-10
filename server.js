@@ -1,12 +1,12 @@
-const express = require('express')
-const serveStatic = require('serve-static')
-const path = require('path')
+var PORT = process.env.PORT || 5000;
+var express = require('express');
+var app = express();
 
-const app = express()
+var http = require('http');
+var server = http.Server(app);
 
-app.use('/', serveStatic(path.join(__dirname)))
+app.use(express.static('client'));
 
-const port = process.env.PORT || 8080
-app.listen(port)
-
-console.log('Listening on Port: ' + port)
+server.listen(PORT, function() {
+    console.log('Chat server running');
+});
