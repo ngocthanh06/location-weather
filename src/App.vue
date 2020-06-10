@@ -48,8 +48,8 @@ export default {
       let months = ['tháng 1 ', 'tháng 2 ', 'tháng 3 ', 'tháng 4 ', 'tháng 5 ', 'tháng 6 ', 'tháng 7 ', 'tháng 8 ', 'tháng 9 ',
         'tháng 10', 'tháng 11', 'tháng 12'
       ];
-      let days = ['Thứ 2 ', 'Thứ 3 ', 'Thứ 4 ', 'Thứ 5 ', 'Thứ 6 ', 'Thứ 7 ', 'Chủ nhật '];
-      let nameDate = ',ngày ';
+      let days = ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'Chủ nhật'];
+      let nameDate = ', ngày ';
       let nameYear = 'năm ';
 
       let day = days[d.getDay()];
